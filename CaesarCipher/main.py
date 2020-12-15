@@ -1,4 +1,4 @@
-# # Caesar Cipher
+# Caesar Cipher
 
 import pyperclip
 
@@ -34,16 +34,16 @@ for symbol in message:
 
     # handle the wrap-around if num is larger than the length of LETTER or less than 0
     if num >= len(LETTERS):
-      num -= len(LETTERS)
+      num = num - len(LETTERS)
     elif num < 0:
-      num += len(LETTERS)
+      num = num + len(LETTERS)
 
     # add encrypted/decrypted number's symbol at the end of translated
-    translated += symbol
+    translated = translated + LETTERS[num]
 
   else:
     # just add the symbol without encrypting/decrypting
-    translated += symbol
+    translated = translated + symbol
 # print the encrypted/decrypted string to the screen
 print(translated)
 
