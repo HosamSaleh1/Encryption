@@ -4,17 +4,17 @@ def main():
     myMessage = "Common sense is not so common."
     myKey = 8
 
-ciphertext = encryptMessage(myKey, myMessage)
+    ciphertext = encryptMessage(myKey, myMessage)
 
 """
 Print the encryption string in ciphertext to the screen,
 with a | (called "pipe" character) after it in case there are space at
 the end of the encrypted message.
 """
-print(ciphertext + "|")
+    print(ciphertext + "|")
 
 # Copy the encrypted string in ciphertext to the clipboard.
-pyperclip.copy(ciphertext)
+    pyperclip.copy(ciphertext)
 
 def encryptMessage(key, message):
     # Each string in ciphertext represents a column in the grid.
